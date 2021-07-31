@@ -1,0 +1,9 @@
+.resumeViewer {
+	background: #fff;
+	width: 7%;
+	padding: 1%;
+	text-align: center;
+	color: rgba(0, 117, 255, 1);
+	font-weight: bold;
+	cursor: pointer;
+}
