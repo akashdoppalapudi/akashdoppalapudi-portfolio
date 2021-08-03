@@ -1,0 +1,32 @@
+.contacts {
+	background: rgba(0, 117, 255, 0.2);
+	box-shadow: 0 8px 32px 0 rgba(0, 117, 255, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	width: 40%;
+	margin: auto;
+	padding: 20px;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.emailPhone {
+	font-weight: bolder;
+}
+
+.header {
+	margin-top: 5%;
+	text-align: center;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+.socialMedia {
+	width: 60%;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 20px;
+}

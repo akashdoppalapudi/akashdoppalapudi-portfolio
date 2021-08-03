@@ -54,7 +54,7 @@ export const About = () => {
 								<li>Java</li>
 								<li>Javascript</li>
 								<li>HTML</li>
-								<li>Javascript</li>
+								<li>CSS</li>
 							</ul>
 						</div>
 						<div className={styles.Col}>
