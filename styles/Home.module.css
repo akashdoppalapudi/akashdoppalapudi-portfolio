@@ -1,3 +1,17 @@
 .Container {
 	height: 100vh;
 }
+
+.heading {
+	font-weight: bold;
+	font-size: 450%;
+}
+
+.greetingBox {
+	margin-top: 10%;
+	margin-left: 2%;
+}
+
+.greetingText {
+	font-size: 200%;
+}
