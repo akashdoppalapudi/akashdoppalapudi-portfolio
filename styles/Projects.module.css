@@ -54,6 +54,16 @@
 	margin-right: 20%;
 	border: 1px solid grey;
 	border-radius: 30px;
+	animation: repoList 1.5s ease-out;
+}
+
+@keyframes repoList {
+	0% {
+		transform: translateY(100%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
 }
 
 .List {
