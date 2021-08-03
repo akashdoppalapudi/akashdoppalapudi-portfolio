@@ -19,6 +19,14 @@
 	padding-top: 3px;
 	padding-bottom: 3px;
 	font-size: 110%;
+	transition: all 0.2s ease;
+}
+
+.reponame:active {
+	padding-top: 3px;
+	padding-bottom: 3px;
+	font-size: 100%;
+	transition: all 0.2s ease;
 }
 
 .gitListTitle {
