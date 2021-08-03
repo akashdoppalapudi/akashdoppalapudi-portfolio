@@ -1,9 +1,56 @@
 .resumeViewer {
 	background: #fff;
-	width: 7%;
-	padding: 1%;
+	width: 40%;
+	padding: 5%;
 	text-align: center;
 	color: rgba(0, 117, 255, 1);
 	font-weight: bold;
 	cursor: pointer;
+	margin: auto;
+	margin-top: 50px;
+	border-radius: 4px;
+}
+
+.basicBio {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.basicBio h3 {
+	font-size: 150%;
+	margin: 10px;
+}
+
+.Col {
+	width: 40%;
+	text-align: center;
+	font-size: 120%;
+	background: rgba(0, 117, 255, 0.2);
+	box-shadow: 0 8px 32px 0 rgba(0, 117, 255, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.Row {
+	margin: auto;
+	width: 70%;
+	margin-top: 5%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.link {
+	font-weight: bold;
+}
+
+.skillsList {
+	list-style-type: none;
+}
+
+.skillsList > li {
+	padding-top: 2px;
 }

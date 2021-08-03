@@ -1,11 +1,11 @@
-import Image from "next/image";
+import Image from 'next/image';
 
-import NavBar from "../components/NavBar.js";
-import styles from "../styles/Projects.module.css";
+import NavBar from '../components/NavBar.js';
+import styles from '../styles/Projects.module.css';
 
 export const getStaticProps = async () => {
 	const res = await fetch(
-		"https://api.github.com/users/akashdoppalapudi/repos"
+		'https://api.github.com/users/akashdoppalapudi/repos'
 	);
 	const data = await res.json();
 	return {
@@ -23,18 +23,10 @@ export const Projects = ({ repos }) => {
 				<div className={styles.repoList}>
 					<div className={styles.gitListTitle}>
 						<h2>
-							Projects on Github that I&#39;ve worked or have been
-							working on
+							Projects on Github that I&#39;ve worked or have been working on
 						</h2>
 					</div>
-					{!repos.length && (
-						<Image
-							src="/spinner.gif"
-							alt="spinning circle"
-							width="50px"
-							height="50px"
-						/>
-					)}
+
 					<div className={styles.List}>
 						{repos.map((repo) => (
 							<div
