@@ -14,13 +14,13 @@ body {
 .page-container {
 	height: 100vh;
 	overflow-x: hidden;
-	overflow-y: hidden;
 }
 
 .container {
 	width: 99%;
 	margin: 0.5%;
 	padding: 0.1%;
+	overflow-y: hidden;
 }
 
 a {

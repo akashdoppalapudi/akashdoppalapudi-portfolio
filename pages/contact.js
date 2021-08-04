@@ -14,7 +14,7 @@ export const Contact = () => {
 					<div className={styles.contacts}>
 						<div className={styles.emailPhone}>
 							<p>Email : akashdoppalapudi2001@gmail.com</p>
-							<p>Phone: +91 6303321486</p>
+							<p>Phone : +91 6303321486</p>
 						</div>
 						<div className={styles.socialMedia}>
 							<a
