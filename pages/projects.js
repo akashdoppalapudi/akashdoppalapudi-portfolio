@@ -3,7 +3,7 @@ import Image from 'next/image';
 import NavBar from '../components/NavBar.js';
 import styles from '../styles/Projects.module.css';
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
 	const res = await fetch(
 		'https://api.github.com/users/akashdoppalapudi/repos'
 	);
