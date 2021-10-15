@@ -1,4 +1,5 @@
 import Head from 'next/head';
+
 import NavBar from '../components/NavBar';
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
 				<NavBar />
 				<div>
 					<div>
-						<h2>Hello There!</h2>
+						<h2 className="text-red-600">Hello There!</h2>
 						<h2>I am Akash Doppalapudi. I am a Full Stack Developer.</h2>
 						<h2>Navigate around the page and know more about me.</h2>
 					</div>

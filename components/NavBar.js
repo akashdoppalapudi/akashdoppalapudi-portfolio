@@ -9,24 +9,9 @@ const NavBar = ({ page }) => {
 			</div>
 
 			<div>
-				<div
-					id={page === 'about' ? styles.active : null}
-					onClick={() => router.push('/about')}
-				>
-					About
-				</div>
-				<div
-					id={page === 'projects' ? styles.active : null}
-					onClick={() => router.push('/projects')}
-				>
-					Projects
-				</div>
-				<div
-					id={page === 'contact' ? styles.active : null}
-					onClick={() => router.push('/contact')}
-				>
-					Contact
-				</div>
+				<div onClick={() => router.push('/about')}>About</div>
+				<div onClick={() => router.push('/projects')}>Projects</div>
+				<div onClick={() => router.push('/contact')}>Contact</div>
 				<div
 					onClick={() =>
 						window.open('https://github.com/akashdoppalapudi', '_blank')
