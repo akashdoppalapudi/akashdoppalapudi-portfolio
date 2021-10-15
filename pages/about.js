@@ -50,6 +50,7 @@ export const About = () => {
 							<h3>Languages</h3>
 							<ul className={styles.skillsList}>
 								<li>C</li>
+								<li>c#</li>
 								<li>Python</li>
 								<li>Java</li>
 								<li>Javascript</li>
