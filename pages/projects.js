@@ -1,7 +1,4 @@
-import Image from 'next/image';
-
 import NavBar from '../components/NavBar.js';
-import styles from '../styles/Projects.module.css';
 
 export const getServerSideProps = async () => {
 	const res = await fetch(
@@ -17,20 +14,19 @@ export const getServerSideProps = async () => {
 
 export const Projects = ({ repos }) => {
 	return (
-		<main className="page-container">
+		<main>
 			<NavBar page="projects" />
-			<div className="container">
-				<div className={styles.repoList}>
-					<div className={styles.gitListTitle}>
+			<div>
+				<div>
+					<div>
 						<h2>
 							Projects on Github that I&#39;ve worked or have been working on
 						</h2>
 					</div>
 
-					<div className={styles.List}>
+					<div>
 						{repos.map((repo) => (
 							<div
-								className={styles.repoName}
 								key={repo.id}
 								onClick={() =>
 									window.open(

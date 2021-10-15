@@ -1,22 +1,20 @@
 import NavBar from '../components/NavBar.js';
 
-import styles from '../styles/Contact.module.css';
-
 export const Contact = () => {
 	return (
-		<main className="page-container">
+		<main>
 			<NavBar page="contact" />
-			<div className="container">
+			<div>
 				<div>
-					<div className={styles.header}>
+					<div>
 						<h3>You can contact me using any of the options below</h3>
 					</div>
-					<div className={styles.contacts}>
-						<div className={styles.emailPhone}>
+					<div>
+						<div>
 							<p>Email : akashdoppalapudi2001@gmail.com</p>
 							<p>Phone : +91 6303321486</p>
 						</div>
-						<div className={styles.socialMedia}>
+						<div>
 							<a
 								href="https://www.facebook.com/akashdoppalapudi6626/"
 								target="_blank"

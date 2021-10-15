@@ -1,13 +1,12 @@
 import NavBar from '../components/NavBar.js';
-import styles from '../styles/About.module.css';
 
 export const About = () => {
 	return (
-		<main className="page-container">
+		<main>
 			<NavBar page="about" />
-			<div className="container">
+			<div>
 				<div>
-					<div className={styles.basicBio}>
+					<div>
 						<h3>
 							My name is Akash Doppalapudi. I am from Andhrapradesh, India.
 						</h3>
@@ -16,8 +15,8 @@ export const About = () => {
 							and skills.
 						</h3>
 					</div>
-					<div className={styles.Row}>
-						<div className={styles.Col}>
+					<div>
+						<div>
 							<h3>Education</h3>
 							<p>
 								Pursued Engineering Degree from{' '}
@@ -25,7 +24,6 @@ export const About = () => {
 									href="https://www.vvitguntur.com/"
 									target="_blank"
 									rel="noreferrer"
-									className={styles.link}
 								>
 									VVIT
 								</a>
@@ -34,9 +32,9 @@ export const About = () => {
 								Batch: 2k18 - 2k22
 							</p>
 						</div>
-						<div className={styles.Col}>
+						<div>
 							<h3>Skills</h3>
-							<ul className={styles.skillsList}>
+							<ul>
 								<li>Programming</li>
 								<li>Frontend Web Development</li>
 								<li>Backend Web Development</li>
@@ -45,10 +43,10 @@ export const About = () => {
 							</ul>
 						</div>
 					</div>
-					<div className={styles.Row}>
-						<div className={styles.Col}>
+					<div>
+						<div>
 							<h3>Languages</h3>
-							<ul className={styles.skillsList}>
+							<ul>
 								<li>C</li>
 								<li>c#</li>
 								<li>Python</li>
@@ -58,9 +56,8 @@ export const About = () => {
 								<li>CSS</li>
 							</ul>
 						</div>
-						<div className={styles.Col}>
+						<div>
 							<div
-								className={styles.resumeViewer}
 								onClick={() =>
 									window.open(
 										'https://drive.google.com/file/d/1GJ3Af9tt4zIJztz0eWKQ9tbb8no18Uop/view?usp=sharing',
