@@ -1,3 +1,5 @@
+import Head from 'next/head';
+
 import NavBar from '../components/NavBar.js';
 
 export const getServerSideProps = async () => {
@@ -14,33 +16,40 @@ export const getServerSideProps = async () => {
 
 export const Projects = ({ repos }) => {
 	return (
-		<main>
-			<NavBar page="projects" />
-			<div>
+		<div>
+			<Head>
+				<title>Akash Doppalapudi</title>
+				<meta name="description" content="Portfolio of Akash Doppalapudi" />
+				<link rel="icon" href="/favicon.ico" />
+			</Head>
+			<main>
+				<NavBar page="projects" />
 				<div>
 					<div>
-						<h2>
-							Projects on Github that I&#39;ve worked or have been working on
-						</h2>
-					</div>
+						<div>
+							<h2>
+								Projects on Github that I&#39;ve worked or have been working on
+							</h2>
+						</div>
 
-					<div>
-						{repos.map((repo) => (
-							<div
-								key={repo.id}
-								onClick={() =>
-									window.open(
-										`https://github.com/akashdoppalapudi/${repo.name}`
-									)
-								}
-							>
-								<h3>{repo.name}</h3>
-							</div>
-						))}
+						<div>
+							{repos.map((repo) => (
+								<div
+									key={repo.id}
+									onClick={() =>
+										window.open(
+											`https://github.com/akashdoppalapudi/${repo.name}`
+										)
+									}
+								>
+									<h3>{repo.name}</h3>
+								</div>
+							))}
+						</div>
 					</div>
 				</div>
-			</div>
-		</main>
+			</main>
+		</div>
 	);
 };
 
