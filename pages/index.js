@@ -4,13 +4,13 @@ import NavBar from '../components/NavBar';
 
 export default function Home() {
 	return (
-		<div>
+		<div className="bg-gray-900 min-h-screen text-gray-300 p-2 md:p-5">
 			<Head>
 				<title>Akash Doppalapudi</title>
 				<meta name="description" content="Portfolio of Akash Doppalapudi" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<main className="bg-black min-h-screen text-gray-500">
+			<main>
 				<NavBar />
 				<div>
 					<div>
