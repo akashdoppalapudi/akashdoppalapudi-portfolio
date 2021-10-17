@@ -13,7 +13,7 @@ export const About = () => {
 
 			<NavBar page="about" />
 			<main className="opacity-60">
-				<div>
+				<div className="mt-6">
 					<div className="text-center">
 						<div>
 							<h3 className="text-lg">

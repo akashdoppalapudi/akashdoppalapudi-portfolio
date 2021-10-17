@@ -22,30 +22,28 @@ export const Projects = ({ repos }) => {
 				<meta name="description" content="Portfolio of Akash Doppalapudi" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<main>
-				<NavBar page="projects" />
-				<div>
-					<div>
-						<div>
-							<h2>
-								Projects on Github that I&#39;ve worked or have been working on
-							</h2>
-						</div>
-
-						<div>
-							{repos.map((repo) => (
-								<div
-									key={repo.id}
-									onClick={() =>
-										window.open(
-											`https://github.com/akashdoppalapudi/${repo.name}`
-										)
-									}
-								>
-									<h3>{repo.name}</h3>
-								</div>
-							))}
-						</div>
+			<NavBar page="projects" />
+			<main className="opacity-60">
+				<div className="mt-6">
+					<div className="text-center">
+						<h2 className="text-lg">
+							Projects on Github that I&#39;ve worked or have been working on
+						</h2>
+					</div>
+					<div className="block md:grid md:grid-cols-3 mt-4 md:mt-8 gap-4 text-center">
+						{repos.map((repo) => (
+							<div
+								className="m-2 md:col-span-1 cursor-pointer bg-black rounded-md p-8 hover:scale-105 transform transition ease-in-out duration-100 items-center"
+								key={repo.id}
+								onClick={() =>
+									window.open(
+										`https://github.com/akashdoppalapudi/${repo.name}`
+									)
+								}
+							>
+								<h3>{repo.name}</h3>
+							</div>
+						))}
 					</div>
 				</div>
 			</main>
