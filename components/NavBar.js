@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 
 const NavBar = ({ page }) => {
 	const router = useRouter();
-	const [effect, setEffect] = useState(false);
 
 	useEffect(() => {
 		const menu = document.querySelector('#menu');
@@ -38,6 +37,7 @@ const NavBar = ({ page }) => {
 			header.classList.remove('mb-5');
 		}
 	};
+
 	return (
 		<nav className="bg-black opacity-50 p-3 md:p-4 md:grid md:grid-cols-7 items-center rounded-md mb-2">
 			<header className="flex justify-between md:mb-0 md:col-span-2">
@@ -71,21 +71,21 @@ const NavBar = ({ page }) => {
 			>
 				<div className="md:col-span-3 md:flex md:justify-center md:mx-8">
 					<div
-						className="my-3 md:mx-6 md:my-0 cursor-pointer py-1 hover:bg-gray-900 focus:scale-75 px-3 transition ease-out duration-300 rounded-full"
+						className="my-3 md:mx-6 md:my-0 cursor-pointer py-1 hover:bg-gray-900 px-3 transition ease-out duration-300 rounded-full"
 						onClick={() => router.push('/about')}
 						id="about"
 					>
 						About
 					</div>
 					<div
-						className="my-3 md:mx-6 md:my-0 cursor-pointer py-1 hover:bg-gray-900 focus:scale-75 px-3 transition ease-out duration-300 rounded-full"
+						className="my-3 md:mx-6 md:my-0 cursor-pointer py-1 hover:bg-gray-900 px-3 transition ease-out duration-300 rounded-full"
 						onClick={() => router.push('/projects')}
 						id="projects"
 					>
 						Projects
 					</div>
 					<div
-						className="my-3 md:mx-6 md:my-0 cursor-pointer py-1 hover:bg-gray-900 focus:scale-75 px-3 transition ease-out duration-300 rounded-full"
+						className="my-3 md:mx-6 md:my-0 cursor-pointer py-1 hover:bg-gray-900 px-3 transition ease-out duration-300 rounded-full"
 						onClick={() => router.push('/contact')}
 						id="contact"
 					>

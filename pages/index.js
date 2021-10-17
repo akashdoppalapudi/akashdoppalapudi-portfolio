@@ -11,8 +11,8 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<NavBar />
-			<main className="p-1 flex flex-grow items-center">
-				<div className="text-lg md:text-3xl font-bold opacity-60 animate-pan-in-from-left">
+			<main className="p-1 flex flex-grow items-center opacity-60">
+				<div className="text-lg md:text-3xl font-bold animate-pan-in-from-left">
 					<h2 className="text-xl md:text-4xl py-1">Hello There!</h2>
 					<h2 className="py-1">
 						I am Akash Doppalapudi. I am a Full Stack Developer.

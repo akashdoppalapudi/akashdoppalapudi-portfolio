@@ -10,25 +10,27 @@ export const About = () => {
 				<meta name="description" content="Portfolio of Akash Doppalapudi" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<main>
-				<NavBar page="about" />
+
+			<NavBar page="about" />
+			<main className="opacity-60">
 				<div>
-					<div>
+					<div className="text-center">
 						<div>
-							<h3>
+							<h3 className="text-lg">
 								My name is Akash Doppalapudi. I am from Andhrapradesh, India.
 							</h3>
-							<h3>
+							<h3 className="text-lg">
 								I am a self taught programmer. Look below to findout my
 								education and skills.
 							</h3>
 						</div>
-						<div>
-							<div>
-								<h3>Education</h3>
+						<div className="md:grid md:grid-cols-2 md:gap-6 mt-10">
+							<div className="my-4 md:my-2 md:mx-2 hover:scale-105 transform transition ease-in-out duration-100 md:col-span-1 block p-4 bg-black rounded-md">
+								<h3 className="text-md mb-2 font-bold">Education</h3>
 								<p>
 									Pursued Engineering Degree from{' '}
 									<a
+										className="underline hover:text-gray-600"
 										href="https://www.vvitguntur.com/"
 										target="_blank"
 										rel="noreferrer"
@@ -37,11 +39,11 @@ export const About = () => {
 									</a>
 									. Specializing in Electronics and Comunication Engineering.
 									<br />
-									Batch: 2k18 - 2k22
+									Batch: 2018 - 2022
 								</p>
 							</div>
-							<div>
-								<h3>Skills</h3>
+							<div className="my-4 md:my-2 md:mx-2 hover:scale-105 transform transition ease-in-out duration-100 md:col-span-1 block p-4 bg-black rounded-md">
+								<h3 className="text-md mb-2 font-bold">Skills</h3>
 								<ul>
 									<li>Programming</li>
 									<li>Frontend Web Development</li>
@@ -50,10 +52,9 @@ export const About = () => {
 									<li>Machine Learning</li>
 								</ul>
 							</div>
-						</div>
-						<div>
-							<div>
-								<h3>Languages</h3>
+
+							<div className="my-4 md:my-2 md:mx-2 hover:scale-105 transform transition ease-in-out duration-100 md:col-span-1 block p-4 bg-black rounded-md">
+								<h3 className="text-md mb-2 font-bold">Languages</h3>
 								<ul>
 									<li>C</li>
 									<li>c#</li>
@@ -64,8 +65,9 @@ export const About = () => {
 									<li>CSS</li>
 								</ul>
 							</div>
-							<div>
+							<div className="my-4 md:my-2 md:mx-2 hover:scale-105 transform transition ease-in-out duration-100 md:col-span-1 block p-4 bg-black rounded-md md:flex md:flex-col md:justify-center">
 								<div
+									className="w-52 cursor-pointer m-auto bg-gray-800 hover:bg-gray-900 p-3 transition ease-out duration-300 rounded-full"
 									onClick={() =>
 										window.open(
 											'https://drive.google.com/file/d/1GJ3Af9tt4zIJztz0eWKQ9tbb8no18Uop/view?usp=sharing',
