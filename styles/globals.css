@@ -10033,6 +10033,26 @@ video {
   }
 }
 
+@-webkit-keyframes shrink {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes shrink {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.9);
+  }
+}
+
 .animate-none {
   -webkit-animation: none;
           animation: none;
@@ -10061,6 +10081,11 @@ video {
 .animate-pan-in-from-left {
   -webkit-animation: pan-in-from-left ease-out 2s;
           animation: pan-in-from-left ease-out 2s;
+}
+
+.animate-shrink {
+  -webkit-animation: shrink ease-in-out 0.2s;
+          animation: shrink ease-in-out 0.2s;
 }
 
 .cursor-auto {
@@ -41648,6 +41673,11 @@ video {
             animation: pan-in-from-left ease-out 2s;
   }
 
+  .sm\:animate-shrink {
+    -webkit-animation: shrink ease-in-out 0.2s;
+            animation: shrink ease-in-out 0.2s;
+  }
+
   .sm\:cursor-auto {
     cursor: auto;
   }
@@ -72879,6 +72909,11 @@ video {
   .md\:animate-pan-in-from-left {
     -webkit-animation: pan-in-from-left ease-out 2s;
             animation: pan-in-from-left ease-out 2s;
+  }
+
+  .md\:animate-shrink {
+    -webkit-animation: shrink ease-in-out 0.2s;
+            animation: shrink ease-in-out 0.2s;
   }
 
   .md\:cursor-auto {
@@ -104114,6 +104149,11 @@ video {
             animation: pan-in-from-left ease-out 2s;
   }
 
+  .lg\:animate-shrink {
+    -webkit-animation: shrink ease-in-out 0.2s;
+            animation: shrink ease-in-out 0.2s;
+  }
+
   .lg\:cursor-auto {
     cursor: auto;
   }
@@ -135347,6 +135387,11 @@ video {
             animation: pan-in-from-left ease-out 2s;
   }
 
+  .xl\:animate-shrink {
+    -webkit-animation: shrink ease-in-out 0.2s;
+            animation: shrink ease-in-out 0.2s;
+  }
+
   .xl\:cursor-auto {
     cursor: auto;
   }
@@ -166578,6 +166623,11 @@ video {
   .\32xl\:animate-pan-in-from-left {
     -webkit-animation: pan-in-from-left ease-out 2s;
             animation: pan-in-from-left ease-out 2s;
+  }
+
+  .\32xl\:animate-shrink {
+    -webkit-animation: shrink ease-in-out 0.2s;
+            animation: shrink ease-in-out 0.2s;
   }
 
   .\32xl\:cursor-auto {
