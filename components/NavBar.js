@@ -41,7 +41,7 @@ const NavBar = ({ page }) => {
 		<nav className="bg-black opacity-50 p-3 md:p-4 md:grid md:grid-cols-7 items-center rounded-md mb-2">
 			<header className="flex justify-between md:mb-0 md:col-span-2">
 				<div
-					className="text-xl cursor-pointer font-bold"
+					className="text-xl cursor-pointer font-bold md:uppercase"
 					onClick={() => router.push('/')}
 				>
 					<h1>Akash Doppalapudi</h1>
