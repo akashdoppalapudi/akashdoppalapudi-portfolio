@@ -25,7 +25,7 @@ export const About = () => {
 							</h3>
 						</div>
 						<div className="md:grid md:grid-cols-2 md:gap-6 mt-10">
-							<div className="my-4 md:my-2 md:mx-2 hover:scale-105 transform transition ease-in-out duration-100 md:col-span-1 block p-4 bg-black rounded-md">
+							<div className="my-4 md:m-2 hover:scale-105 transform transition ease-in-out duration-100 md:col-span-1 block p-4 bg-black rounded-md">
 								<h3 className="text-md mb-2 font-bold">Education</h3>
 								<p>
 									Pursued Engineering Degree from{' '}
@@ -42,7 +42,7 @@ export const About = () => {
 									Batch: 2018 - 2022
 								</p>
 							</div>
-							<div className="my-4 md:my-2 md:mx-2 hover:scale-105 transform transition ease-in-out duration-100 md:col-span-1 block p-4 bg-black rounded-md">
+							<div className="my-4 md:m-2 hover:scale-105 transform transition ease-in-out duration-100 md:col-span-1 block p-4 bg-black rounded-md">
 								<h3 className="text-md mb-2 font-bold">Skills</h3>
 								<ul>
 									<li>Programming</li>
@@ -53,7 +53,7 @@ export const About = () => {
 								</ul>
 							</div>
 
-							<div className="my-4 md:my-2 md:mx-2 hover:scale-105 transform transition ease-in-out duration-100 md:col-span-1 block p-4 bg-black rounded-md">
+							<div className="my-4 md:m-2 hover:scale-105 transform transition ease-in-out duration-100 md:col-span-1 block p-4 bg-black rounded-md">
 								<h3 className="text-md mb-2 font-bold">Languages</h3>
 								<ul>
 									<li>C</li>
@@ -65,7 +65,7 @@ export const About = () => {
 									<li>CSS</li>
 								</ul>
 							</div>
-							<div className="my-4 md:my-2 md:mx-2 hover:scale-105 transform transition ease-in-out duration-100 md:col-span-1 block p-4 bg-black rounded-md md:flex md:flex-col md:justify-center">
+							<div className="my-4 md:m-2 hover:scale-105 transform transition ease-in-out duration-100 md:col-span-1 block p-4 bg-black rounded-md md:flex md:flex-col md:justify-center">
 								<div
 									className="w-52 cursor-pointer m-auto bg-gray-800 hover:bg-gray-900 p-3 transition ease-out duration-300 rounded-full"
 									onClick={() =>
