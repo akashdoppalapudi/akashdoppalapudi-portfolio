@@ -1,80 +1,88 @@
+import Head from 'next/head';
+
 import NavBar from '../components/NavBar.js';
-import styles from '../styles/About.module.css';
 
 export const About = () => {
 	return (
-		<main className="page-container">
+		<div className="bg-gray-900 min-h-screen text-gray-300 p-2 md:p-5">
+			<Head>
+				<title>Akash Doppalapudi</title>
+				<meta name="description" content="Portfolio of Akash Doppalapudi" />
+				<link rel="icon" href="/favicon.ico" />
+			</Head>
+
 			<NavBar page="about" />
-			<div className="container">
-				<div>
-					<div className={styles.basicBio}>
-						<h3>
-							My name is Akash Doppalapudi. I am from Andhrapradesh, India.
-						</h3>
-						<h3>
-							I am a self taught programmer. Look below to findout my education
-							and skills.
-						</h3>
-					</div>
-					<div className={styles.Row}>
-						<div className={styles.Col}>
-							<h3>Education</h3>
-							<p>
-								Pursued Engineering Degree from{' '}
-								<a
-									href="https://www.vvitguntur.com/"
-									target="_blank"
-									rel="noreferrer"
-									className={styles.link}
+			<main className="opacity-60">
+				<div className="mt-6">
+					<div className="text-center">
+						<div>
+							<h3 className="text-lg">
+								My name is Akash Doppalapudi. I am from Andhrapradesh, India.
+							</h3>
+							<h3 className="text-lg">
+								I am a self taught programmer. Look below to findout my
+								education and skills.
+							</h3>
+						</div>
+						<div className="md:grid md:grid-cols-2 md:gap-6 mt-10">
+							<div className="my-4 md:m-2 hover:scale-105 transform transition ease-in-out duration-100 md:col-span-1 block p-4 bg-black rounded-md">
+								<h3 className="text-md mb-2 font-bold">Education</h3>
+								<p>
+									Pursued Engineering Degree from{' '}
+									<a
+										className="underline hover:text-gray-600"
+										href="https://www.vvitguntur.com/"
+										target="_blank"
+										rel="noreferrer"
+									>
+										VVIT
+									</a>
+									. Specializing in Electronics and Comunication Engineering.
+									<br />
+									Batch: 2018 - 2022
+								</p>
+							</div>
+							<div className="my-4 md:m-2 hover:scale-105 transform transition ease-in-out duration-100 md:col-span-1 block p-4 bg-black rounded-md">
+								<h3 className="text-md mb-2 font-bold">Skills</h3>
+								<ul>
+									<li>Programming</li>
+									<li>Frontend Web Development</li>
+									<li>Backend Web Development</li>
+									<li>Datascience</li>
+									<li>Machine Learning</li>
+								</ul>
+							</div>
+
+							<div className="my-4 md:m-2 hover:scale-105 transform transition ease-in-out duration-100 md:col-span-1 block p-4 bg-black rounded-md">
+								<h3 className="text-md mb-2 font-bold">Languages</h3>
+								<ul>
+									<li>C</li>
+									<li>c#</li>
+									<li>Python</li>
+									<li>Java</li>
+									<li>Javascript</li>
+									<li>HTML</li>
+									<li>CSS</li>
+								</ul>
+							</div>
+							<div className="my-4 md:m-2 hover:scale-105 transform transition ease-in-out duration-100 md:col-span-1 block p-4 bg-black rounded-md md:flex md:flex-col md:justify-center">
+								<div
+									className="w-52 cursor-pointer m-auto bg-gray-800 hover:bg-gray-900 p-3 transition ease-out duration-300 rounded-full"
+									onClick={() =>
+										window.open(
+											'https://drive.google.com/file/d/1GJ3Af9tt4zIJztz0eWKQ9tbb8no18Uop/view?usp=sharing',
+											'_blank'
+										)
+									}
 								>
-									VVIT
-								</a>
-								. Specializing in Electronics and Comunication Engineering.
-								<br />
-								Batch: 2k18 - 2k22
-							</p>
-						</div>
-						<div className={styles.Col}>
-							<h3>Skills</h3>
-							<ul className={styles.skillsList}>
-								<li>Programming</li>
-								<li>Frontend Web Development</li>
-								<li>Backend Web Development</li>
-								<li>Datascience</li>
-								<li>Machine Learning</li>
-							</ul>
-						</div>
-					</div>
-					<div className={styles.Row}>
-						<div className={styles.Col}>
-							<h3>Languages</h3>
-							<ul className={styles.skillsList}>
-								<li>C</li>
-								<li>c#</li>
-								<li>Python</li>
-								<li>Java</li>
-								<li>Javascript</li>
-								<li>HTML</li>
-								<li>CSS</li>
-							</ul>
-						</div>
-						<div className={styles.Col}>
-							<div
-								className={styles.resumeViewer}
-								onClick={() =>
-									window.open(
-										'https://drive.google.com/file/d/1GJ3Af9tt4zIJztz0eWKQ9tbb8no18Uop/view?usp=sharing',
-										'_blank'
-									)
-								}
-							>
-								My Résumé
-							</div>{' '}
+									My Résumé
+								</div>{' '}
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</main>
+			</main>
+		</div>
 	);
 };
 

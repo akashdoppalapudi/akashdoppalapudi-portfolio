@@ -1,7 +1,6 @@
-import Image from 'next/image';
+import Head from 'next/head';
 
 import NavBar from '../components/NavBar.js';
-import styles from '../styles/Projects.module.css';
 
 export const getServerSideProps = async () => {
 	const res = await fetch(
@@ -17,20 +16,24 @@ export const getServerSideProps = async () => {
 
 export const Projects = ({ repos }) => {
 	return (
-		<main className="page-container">
+		<div className="bg-gray-900 min-h-screen text-gray-300 p-2 md:p-5">
+			<Head>
+				<title>Akash Doppalapudi</title>
+				<meta name="description" content="Portfolio of Akash Doppalapudi" />
+				<link rel="icon" href="/favicon.ico" />
+			</Head>
 			<NavBar page="projects" />
-			<div className="container">
-				<div className={styles.repoList}>
-					<div className={styles.gitListTitle}>
-						<h2>
+			<main className="opacity-60">
+				<div className="mt-6">
+					<div className="text-center">
+						<h2 className="text-lg">
 							Projects on Github that I&#39;ve worked or have been working on
 						</h2>
 					</div>
-
-					<div className={styles.List}>
+					<div className="block md:grid md:grid-cols-3 mt-4 md:mt-8 gap-4 text-center">
 						{repos.map((repo) => (
 							<div
-								className={styles.repoName}
+								className="m-2 md:col-span-1 cursor-pointer bg-black rounded-md p-8 hover:scale-105 transform transition ease-in-out duration-100 items-center"
 								key={repo.id}
 								onClick={() =>
 									window.open(
@@ -43,8 +46,8 @@ export const Projects = ({ repos }) => {
 						))}
 					</div>
 				</div>
-			</div>
-		</main>
+			</main>
+		</div>
 	);
 };
 

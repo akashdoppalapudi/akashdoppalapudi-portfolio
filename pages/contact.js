@@ -1,23 +1,31 @@
-import NavBar from '../components/NavBar.js';
+import Head from 'next/head';
 
-import styles from '../styles/Contact.module.css';
+import NavBar from '../components/NavBar.js';
 
 export const Contact = () => {
 	return (
-		<main className="page-container">
+		<div className="bg-gray-900 min-h-screen text-gray-300 p-2 md:p-5">
+			<Head>
+				<title>Akash Doppalapudi</title>
+				<meta name="description" content="Portfolio of Akash Doppalapudi" />
+				<link rel="icon" href="/favicon.ico" />
+			</Head>
 			<NavBar page="contact" />
-			<div className="container">
-				<div>
-					<div className={styles.header}>
-						<h3>You can contact me using any of the options below</h3>
+			<main className="opacity-60">
+				<div className="mt-6">
+					<div className="text-center">
+						<h3 className="text-lg">
+							You can contact me using any of the options below
+						</h3>
 					</div>
-					<div className={styles.contacts}>
-						<div className={styles.emailPhone}>
-							<p>Email : akashdoppalapudi2001@gmail.com</p>
-							<p>Phone : +91 6303321486</p>
+					<div className="bg-black my-4 md:m-2 rounded-md text-center py-6">
+						<div>
+							<p className="my-2">Email : akashdoppalapudi2001@gmail.com</p>
+							<p className="my-2">Phone : +91 6303321486</p>
 						</div>
-						<div className={styles.socialMedia}>
+						<div className="flex justify-center">
 							<a
+								className="m-2 hover:scale-105 transform transition ease-in-out duration-100"
 								href="https://www.facebook.com/akashdoppalapudi6626/"
 								target="_blank"
 								rel="noreferrer"
@@ -33,6 +41,7 @@ export const Contact = () => {
 								</svg>
 							</a>
 							<a
+								className="m-2 hover:scale-105 transform transition ease-in-out duration-100"
 								href="https://www.instagram.com/akash_6.626/"
 								target="_blank"
 								rel="noreferrer"
@@ -48,6 +57,7 @@ export const Contact = () => {
 								</svg>
 							</a>
 							<a
+								className="m-2 hover:scale-105 transform transition ease-in-out duration-100"
 								href="https://twitter.com/akash_6626"
 								target="_blank"
 								rel="noreferrer"
@@ -65,8 +75,8 @@ export const Contact = () => {
 						</div>
 					</div>
 				</div>
-			</div>
-		</main>
+			</main>
+		</div>
 	);
 };
 
