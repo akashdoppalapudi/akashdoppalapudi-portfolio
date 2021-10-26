@@ -57,7 +57,7 @@ export const About = () => {
 								<h3 className="text-md mb-2 font-bold">Languages</h3>
 								<ul>
 									<li>C</li>
-									<li>c#</li>
+									<li>C#</li>
 									<li>Python</li>
 									<li>Java</li>
 									<li>Javascript</li>
