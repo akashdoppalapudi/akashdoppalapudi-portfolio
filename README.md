@@ -25,6 +25,20 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to see the r
 You can modify the pages by editing files in `pages` directory.
 You can also create or edit components in the `components` directory.
 
+## Styling
+
+I used [Tailwind CSS](https://tailwindcss.com/) to style my website.
+
+- [Documentation - Tailwind CSS](https://tailwindcss.com/docs) - learn about Tailwind CSS
+
+## Cloning
+
+If you Clone or Fork this repository install all the dependencies first by running the command
+
+```bash
+npm install
+```
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
