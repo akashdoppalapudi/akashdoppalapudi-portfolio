@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 const NavBar = ({ page }) => {
 	const router = useRouter();
@@ -29,13 +29,8 @@ const NavBar = ({ page }) => {
 	const menuClickHandler = () => {
 		const menu = document.querySelector('#menu');
 		const header = document.querySelector('header');
-		if (menu.classList.contains('hidden')) {
-			menu.classList.remove('hidden');
-			header.classList.add('mb-5');
-		} else {
-			menu.classList.add('hidden');
-			header.classList.remove('mb-5');
-		}
+		menu.classList.toggle('hidden');
+		header.classList.toggle('mb-5');
 	};
 
 	return (
