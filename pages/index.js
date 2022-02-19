@@ -23,7 +23,7 @@ export default function Home() {
 					<a
 						href="https://akashdoppalapudi.hashnode.dev"
 						target="_blank"
-						className="md:border-2 float-right mt-10 mr-10 md:float-left md:mr-0 md:border-black hover:bg-gray-900 bg-black rounded-xl p-2 text-lg md:text:xl cursor-pointer font-bold uppercase hover:scale-95 transform transition ease-in-out duration-100"
+						className="md:border-2 float-right mt-10 mr-10 md:float-left md:mr-0 md:border-black md:hover:bg-gray-900 bg-black rounded-xl p-2 text-lg md:text:xl cursor-pointer font-bold uppercase hover:scale-95 transform transition ease-in-out duration-100"
 					>
 						Visit My Blog
 					</a>
