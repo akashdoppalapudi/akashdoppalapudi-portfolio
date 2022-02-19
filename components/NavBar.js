@@ -89,7 +89,7 @@ const NavBar = ({ page }) => {
 				</div>
 				<div className="md:col-span-2 md:flex md:justify-end">
 					<div
-						className="my-3 md:mx-6 md:my-0 cursor-pointer p-1"
+						className="my-3 md:mx-6 md:my-0 cursor-pointer p-1 hover:underline transform transition ease-in-out duration-100"
 						onClick={() =>
 							window.open('https://github.com/akashdoppalapudi', '_blank')
 						}
@@ -97,7 +97,7 @@ const NavBar = ({ page }) => {
 						Github
 					</div>
 					<div
-						className="my-3 md:mx-6 md:my-0 cursor-pointer p-1"
+						className="my-3 md:mx-6 md:my-0 cursor-pointer p-1 hover:underline transform transition ease-in-out duration-100"
 						onClick={() =>
 							window.open(
 								'https://www.linkedin.com/in/akashdoppalapudi/',
