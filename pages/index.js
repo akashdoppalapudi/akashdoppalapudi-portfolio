@@ -17,7 +17,7 @@ export default function Home(props) {
 		<div className="bg-gray-900 flex flex-col min-h-screen text-gray-300 p-2 md:p-5">
 			<Head>
 				<title>{props.name}</title>
-				<meta name="description" content="Portfolio of Akash Doppalapudi" />
+				<meta name="description" content={`Portfolio of ${props.name}`} />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<NavBar />

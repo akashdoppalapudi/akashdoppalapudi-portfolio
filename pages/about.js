@@ -2,12 +2,20 @@ import Head from 'next/head';
 
 import NavBar from '../components/NavBar.js';
 
-export const About = () => {
+export async function getStaticProps() {
+	return {
+		props: {
+			name: 'Akash Doppalapudi',
+		},
+	};
+}
+
+export const About = (props) => {
 	return (
 		<div className="bg-gray-900 min-h-screen text-gray-300 p-2 md:p-5">
 			<Head>
 				<title>Akash Doppalapudi</title>
-				<meta name="description" content="Portfolio of Akash Doppalapudi" />
+				<meta name="description" content={`Portfolio of ${props.name}`} />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 

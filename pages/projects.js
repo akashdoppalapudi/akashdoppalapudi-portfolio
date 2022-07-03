@@ -3,17 +3,25 @@ import { useEffect, useState } from 'react';
 
 import NavBar from '../components/NavBar.js';
 
-export const Projects = () => {
+export async function getStaticProps() {
+	return {
+		props: {
+			name: 'Akash Doppalapudi',
+			githubProfileURL: 'https://github.com/akashdoppalapudi',
+			githubAPIURL: 'https://api.github.com/users/akashdoppalapudi/repos',
+			githubToken: process.env.GITHUB_TOKEN,
+		},
+	};
+}
+
+export const Projects = (props) => {
 	const [repos, setRepos] = useState(null);
 	useEffect(async () => {
-		const res = await fetch(
-			'https://api.github.com/users/akashdoppalapudi/repos',
-			{
-				headers: {
-					Authorization: `token ${process.env.NEXT_PUBLIC_GITHUB_TOKEN}`,
-				},
-			}
-		);
+		const res = await fetch(props.githubAPIURL, {
+			headers: {
+				Authorization: `token ${props.githubToken}`,
+			},
+		});
 		const data = await res.json();
 		setRepos(data);
 	}, []);
@@ -21,8 +29,8 @@ export const Projects = () => {
 	return (
 		<div className="bg-gray-900 min-h-screen text-gray-300 p-2 md:p-5">
 			<Head>
-				<title>Akash Doppalapudi</title>
-				<meta name="description" content="Portfolio of Akash Doppalapudi" />
+				<title>{props.name}</title>
+				<meta name="description" content={`Portfolio of ${props.name}`} />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<NavBar page="projects" />
@@ -44,9 +52,7 @@ export const Projects = () => {
 									className="m-2 md:col-span-1 cursor-pointer bg-black rounded-md p-8 hover:scale-105 transform transition ease-in-out duration-100 items-center"
 									key={repo.id}
 									onClick={() =>
-										window.open(
-											`https://github.com/akashdoppalapudi/${repo.name}`
-										)
+										window.open(`${props.githubProfileURL}/${repo.name}`)
 									}
 								>
 									<h3>{repo.name}</h3>
