@@ -6,6 +6,11 @@ export async function getStaticProps() {
 	return {
 		props: {
 			name: 'Akash Doppalapudi',
+			email: 'akashdoppalapudi2001@gmail.com',
+			mobile: '6303321486',
+			facebookProfileURL: 'https://www.facebook.com/akashdoppalapudi6626/',
+			instagramProfileURL: 'https://www.instagram.com/akash_6.626/',
+			twitterProfileURL: 'https://twitter.com/akash_6626',
 		},
 	};
 }
@@ -14,7 +19,7 @@ export const Contact = (props) => {
 	return (
 		<div className="bg-gray-900 min-h-screen text-gray-300 p-2 md:p-5">
 			<Head>
-				<title>Akash Doppalapudi</title>
+				<title>{props.name}</title>
 				<meta name="description" content={`Portfolio of ${props.name}`} />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
@@ -28,13 +33,13 @@ export const Contact = (props) => {
 					</div>
 					<div className="bg-black my-4 md:m-2 rounded-md text-center py-6">
 						<div>
-							<p className="my-2">Email : akashdoppalapudi2001@gmail.com</p>
-							<p className="my-2">Phone : +91 6303321486</p>
+							<p className="my-2">Email : {props.email}</p>
+							<p className="my-2">Phone : +91 {props.mobile}</p>
 						</div>
 						<div className="flex justify-center">
 							<a
 								className="m-2 hover:scale-105 transform transition ease-in-out duration-100"
-								href="https://www.facebook.com/akashdoppalapudi6626/"
+								href={props.facebookProfileURL}
 								target="_blank"
 								rel="noreferrer"
 							>
@@ -50,7 +55,7 @@ export const Contact = (props) => {
 							</a>
 							<a
 								className="m-2 hover:scale-105 transform transition ease-in-out duration-100"
-								href="https://www.instagram.com/akash_6.626/"
+								href={props.instagramProfileURL}
 								target="_blank"
 								rel="noreferrer"
 							>
@@ -66,7 +71,7 @@ export const Contact = (props) => {
 							</a>
 							<a
 								className="m-2 hover:scale-105 transform transition ease-in-out duration-100"
-								href="https://twitter.com/akash_6626"
+								href={props.twitterProfileURL}
 								target="_blank"
 								rel="noreferrer"
 							>
