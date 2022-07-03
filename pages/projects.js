@@ -7,11 +7,16 @@ export const Projects = () => {
 	const [repos, setRepos] = useState(null);
 	useEffect(async () => {
 		const res = await fetch(
-			'https://api.github.com/users/akashdoppalapudi/repos'
+			'https://api.github.com/users/akashdoppalapudi/repos',
+			{
+				headers: {
+					Authorization: `token ${process.env.NEXT_PUBLIC_GITHUB_TOKEN}`,
+				},
+			}
 		);
 		const data = await res.json();
 		setRepos(data);
-	});
+	}, []);
 	return (
 		<div className="bg-gray-900 min-h-screen text-gray-300 p-2 md:p-5">
 			<Head>
