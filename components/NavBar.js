@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 
-const NavBar = ({ page }) => {
+const NavBar = (props) => {
 	const router = useRouter();
 
 	useEffect(() => {
@@ -10,7 +10,7 @@ const NavBar = ({ page }) => {
 		const projects = document.querySelector('#projects');
 		const contact = document.querySelector('#contact');
 		menu.classList.add('hidden');
-		switch (page) {
+		switch (props.page) {
 			case 'about':
 				about.classList.add('bg-gray-700', 'cursor-default', 'font-bold');
 				about.classList.remove('cursor-pointer', 'hover:bg-gray-900');
@@ -24,7 +24,7 @@ const NavBar = ({ page }) => {
 				contact.classList.remove('cursor-pointer', 'hover:bg-gray-900');
 				break;
 		}
-	}, [page]);
+	}, [props.page]);
 
 	const menuClickHandler = () => {
 		const menu = document.querySelector('#menu');
@@ -40,7 +40,7 @@ const NavBar = ({ page }) => {
 					className="text-xl cursor-pointer font-bold md:uppercase hover:scale-95 transform transition ease-in-out duration-100"
 					onClick={() => router.push('/')}
 				>
-					<h1>Akash Doppalapudi</h1>
+					<h1>{props.header}</h1>
 				</div>
 				<button
 					className="hover:bg-gray-900 px-2 rounded md:hidden"
@@ -90,20 +90,13 @@ const NavBar = ({ page }) => {
 				<div className="md:col-span-2 md:flex md:justify-end">
 					<div
 						className="my-3 md:mx-6 md:my-0 cursor-pointer p-1 hover:underline transform transition ease-in-out duration-100"
-						onClick={() =>
-							window.open('https://github.com/akashdoppalapudi', '_blank')
-						}
+						onClick={() => window.open(props.githubProfileURL, '_blank')}
 					>
 						Github
 					</div>
 					<div
 						className="my-3 md:mx-6 md:my-0 cursor-pointer p-1 hover:underline transform transition ease-in-out duration-100"
-						onClick={() =>
-							window.open(
-								'https://www.linkedin.com/in/akashdoppalapudi/',
-								'_blank'
-							)
-						}
+						onClick={() => window.open(props.linkedInProfileURL, '_blank')}
 					>
 						Linkedin
 					</div>

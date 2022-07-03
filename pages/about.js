@@ -10,6 +10,8 @@ export async function getStaticProps() {
 			resumeURL:
 				'https://drive.google.com/file/d/1xlfzkrPMO_Vx6I-RcoU1-iCyKpSIfm20/view?usp=sharing',
 			vvitWebsiteURL: 'https://www.vvitguntur.com/',
+			githubProfileURL: 'https://github.com/akashdoppalapudi',
+			linkedInProfileURL: 'https://www.linkedin.com/in/akashdoppalapudi/',
 			skills: [
 				'Programming',
 				'Frontend Web Development',
@@ -32,7 +34,12 @@ export const About = (props) => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<NavBar page="about" />
+			<NavBar
+				page="about"
+				header={props.name}
+				githubProfileURL={props.githubProfileURL}
+				linkedInProfileURL={props.linkedInProfileURL}
+			/>
 			<main className="opacity-60">
 				<div className="mt-6">
 					<div className="text-center">

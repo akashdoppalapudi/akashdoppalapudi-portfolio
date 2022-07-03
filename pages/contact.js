@@ -8,6 +8,8 @@ export async function getStaticProps() {
 			name: 'Akash Doppalapudi',
 			email: 'akashdoppalapudi2001@gmail.com',
 			mobile: '6303321486',
+			githubProfileURL: 'https://github.com/akashdoppalapudi',
+			linkedInProfileURL: 'https://www.linkedin.com/in/akashdoppalapudi/',
 			facebookProfileURL: 'https://www.facebook.com/akashdoppalapudi6626/',
 			instagramProfileURL: 'https://www.instagram.com/akash_6.626/',
 			twitterProfileURL: 'https://twitter.com/akash_6626',
@@ -23,7 +25,12 @@ export const Contact = (props) => {
 				<meta name="description" content={`Portfolio of ${props.name}`} />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<NavBar page="contact" />
+			<NavBar
+				page="contact"
+				header={props.name}
+				githubProfileURL={props.githubProfileURL}
+				linkedInProfileURL={props.linkedInProfileURL}
+			/>
 			<main className="opacity-60">
 				<div className="mt-6">
 					<div className="text-center">

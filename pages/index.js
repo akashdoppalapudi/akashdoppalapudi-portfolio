@@ -8,6 +8,8 @@ export async function getStaticProps() {
 			blogLink: 'https://akashdoppalapudi.hashnode.dev',
 			name: 'Akash Doppalapudi',
 			designation: 'Full Stack Developer',
+			githubProfileURL: 'https://github.com/akashdoppalapudi',
+			linkedInProfileURL: 'https://www.linkedin.com/in/akashdoppalapudi/',
 		},
 	};
 }
@@ -20,7 +22,11 @@ export default function Home(props) {
 				<meta name="description" content={`Portfolio of ${props.name}`} />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<NavBar />
+			<NavBar
+				header={props.name}
+				githubProfileURL={props.githubProfileURL}
+				linkedInProfileURL={props.linkedInProfileURL}
+			/>
 			<main className="p-1 flex flex-grow items-center opacity-60">
 				<div className="text-lg md:text-3xl font-bold animate-pan-in-from-left">
 					<h2 className="uppercase text-xl md:text-4xl py-1">Hello There!</h2>

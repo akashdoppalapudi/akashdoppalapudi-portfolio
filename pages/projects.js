@@ -8,6 +8,7 @@ export async function getStaticProps() {
 		props: {
 			name: 'Akash Doppalapudi',
 			githubProfileURL: 'https://github.com/akashdoppalapudi',
+			linkedInProfileURL: 'https://www.linkedin.com/in/akashdoppalapudi/',
 			githubAPIURL: 'https://api.github.com/users/akashdoppalapudi/repos',
 			githubToken: process.env.GITHUB_TOKEN,
 		},
@@ -33,7 +34,12 @@ export const Projects = (props) => {
 				<meta name="description" content={`Portfolio of ${props.name}`} />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<NavBar page="projects" />
+			<NavBar
+				page="projects"
+				header={props.name}
+				githubProfileURL={props.githubProfileURL}
+				linkedInProfileURL={props.linkedInProfileURL}
+			/>
 			<main className="opacity-60">
 				<div className="mt-6">
 					<div className="text-center">
