@@ -6,8 +6,7 @@
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint",
-		"build-css": "tailwindcss build -i styles/index.css -o styles/globals.css"
+		"lint": "next lint"
 	},
 	"dependencies": {
 		"node-fetch": "^3.2.5",
