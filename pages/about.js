@@ -1,26 +1,28 @@
 import Head from 'next/head';
 
 import NavBar from '../components/NavBar.js';
+import {
+	name,
+	location,
+	resumeURL,
+	vvitWebsiteURL,
+	githubProfileURL,
+	linkedInProfileURL,
+	skills,
+	languages,
+} from '../data/data';
 
 export async function getStaticProps() {
 	return {
 		props: {
-			name: 'Akash Doppalapudi',
-			location: 'India',
-			resumeURL:
-				'https://drive.google.com/file/d/1xlfzkrPMO_Vx6I-RcoU1-iCyKpSIfm20/view?usp=sharing',
-			vvitWebsiteURL: 'https://www.vvitguntur.com/',
-			githubProfileURL: 'https://github.com/akashdoppalapudi',
-			linkedInProfileURL: 'https://www.linkedin.com/in/akashdoppalapudi/',
-			skills: [
-				'Programming',
-				'Frontend Web Development',
-				'Backend Web Development',
-				'Data Science',
-				'Machine Learning',
-				'DBMS',
-			],
-			languages: ['C', 'C#', 'Python', 'Java', 'Javascript', 'HTML', 'CSS'],
+			name: name,
+			location: location,
+			resumeURL: resumeURL,
+			vvitWebsiteURL: vvitWebsiteURL,
+			githubProfileURL: githubProfileURL,
+			linkedInProfileURL: linkedInProfileURL,
+			skills: skills,
+			languages: languages,
 		},
 	};
 }
