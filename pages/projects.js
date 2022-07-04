@@ -2,15 +2,22 @@ import Head from 'next/head';
 import { useEffect, useState } from 'react';
 
 import NavBar from '../components/NavBar.js';
+import {
+	name,
+	githubProfileURL,
+	linkedInProfileURL,
+	githubAPIURL,
+	githubToken,
+} from '../data/data';
 
 export async function getStaticProps() {
 	return {
 		props: {
-			name: 'Akash Doppalapudi',
-			githubProfileURL: 'https://github.com/akashdoppalapudi',
-			linkedInProfileURL: 'https://www.linkedin.com/in/akashdoppalapudi/',
-			githubAPIURL: 'https://api.github.com/users/akashdoppalapudi/repos',
-			githubToken: process.env.GITHUB_TOKEN,
+			name: name,
+			githubProfileURL: githubProfileURL,
+			linkedInProfileURL: linkedInProfileURL,
+			githubAPIURL: githubAPIURL,
+			githubToken: githubToken,
 		},
 	};
 }

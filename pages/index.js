@@ -1,15 +1,22 @@
 import Head from 'next/head';
 
 import NavBar from '../components/NavBar';
+import {
+	name,
+	blogLink,
+	designation,
+	githubProfileURL,
+	linkedInProfileURL,
+} from '../data/data';
 
 export async function getStaticProps() {
 	return {
 		props: {
-			blogLink: 'https://akashdoppalapudi.hashnode.dev',
-			name: 'Akash Doppalapudi',
-			designation: 'Full Stack Developer',
-			githubProfileURL: 'https://github.com/akashdoppalapudi',
-			linkedInProfileURL: 'https://www.linkedin.com/in/akashdoppalapudi/',
+			blogLink: blogLink,
+			name: name,
+			designation: designation,
+			githubProfileURL: githubProfileURL,
+			linkedInProfileURL: linkedInProfileURL,
 		},
 	};
 }

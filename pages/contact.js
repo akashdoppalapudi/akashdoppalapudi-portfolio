@@ -1,18 +1,28 @@
 import Head from 'next/head';
 
 import NavBar from '../components/NavBar.js';
+import {
+	name,
+	email,
+	mobile,
+	githubProfileURL,
+	linkedInProfileURL,
+	facebookProfileURL,
+	instagramProfileURL,
+	twitterProfileURL,
+} from '../data/data';
 
 export async function getStaticProps() {
 	return {
 		props: {
-			name: 'Akash Doppalapudi',
-			email: 'akashdoppalapudi2001@gmail.com',
-			mobile: '6303321486',
-			githubProfileURL: 'https://github.com/akashdoppalapudi',
-			linkedInProfileURL: 'https://www.linkedin.com/in/akashdoppalapudi/',
-			facebookProfileURL: 'https://www.facebook.com/akashdoppalapudi6626/',
-			instagramProfileURL: 'https://www.instagram.com/akash_6.626/',
-			twitterProfileURL: 'https://twitter.com/akash_6626',
+			name: name,
+			email: email,
+			mobile: mobile,
+			githubProfileURL: githubProfileURL,
+			linkedInProfileURL: linkedInProfileURL,
+			facebookProfileURL: facebookProfileURL,
+			instagramProfileURL: instagramProfileURL,
+			twitterProfileURL: twitterProfileURL,
 		},
 	};
 }
