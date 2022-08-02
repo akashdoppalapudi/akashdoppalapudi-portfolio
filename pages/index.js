@@ -35,7 +35,7 @@ export default function Home(props) {
 				linkedInProfileURL={props.linkedInProfileURL}
 			/>
 			<main className="p-1 flex flex-grow items-center opacity-60">
-				<div className="text-lg md:text-3xl font-bold animate-pan-in-from-left">
+				<div className="text-lg md:text-3xl font-bold">
 					<h2 className="uppercase text-xl md:text-4xl py-1">Hello There!</h2>
 					<h2 className="uppercase py-1">
 						I am {props.name}. I am a {props.designation}.
